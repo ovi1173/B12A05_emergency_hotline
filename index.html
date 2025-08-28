@@ -17,10 +17,11 @@
 
 <body>
     <!-- Navigation section -->
-    <nav class="flex justify-between mt-5 max-w-[1440px] mx-auto">
-        <div class="flex  items-center gap-2">
+    <nav class="flex flex-col sm:flex-row justify-between mt-5 max-w-[1440px] mx-auto">
+        <div class="flex flex-col items-center justify-center gap-2 mb-2 sm:flex-row">
             <img class="h-11 w-11" src="assets/logo.png" alt="">
-            <h3 class="text-2xl leading-none text-[#006747] font-bold">Emergency <br> Service</h3>
+            <h3 class="text-2xl leading-none text-[#006747] font-bold">Emergency <br class="hidden sm:inline"> Service
+            </h3>
         </div>
         <div class="flex justify-center items-center gap-5">
             <div
@@ -47,16 +48,17 @@
             to-[#013223] 
             h-60 w-full mt-12 text-white flex items-center justify-center">
         <div class="text-center">
-            <img class="w-[92px] h-[92px] mx-auto mb-2" src="assets/logo-dark.png" alt="">
-            <h1 class="font-bold text-5xl">Emergency Service Directory</h1>
-            <p class="text-xl font-semibold mt-2">Government Emergency Services at Your Fingertip – A Project by
+            <img class="w-20 h-20 sm:w-[92px] sm:h-[92px] mx-auto mb-2" src="assets/logo-dark.png" alt="">
+            <h1 class="font-bold text-2xl sm:text-5xl">Emergency Service Directory</h1>
+            <p class="text-base sm:text-xl font-medium sm:font-semibold mt-2">Government Emergency Services at Your
+                Fingertip – A Project by
                 Government of the People’s Republic of Bangladesh</p>
         </div>
 
     </section>
     <!-- card section -->
-    <section class="my-20 max-w-[1440px] mx-auto flex gap-6  w-full ">
-        <div id="card-container" class="grid grid-cols-3 gap-6 w-[75%]">
+    <section class="my-20 max-w-[1440px] mx-auto flex flex-col sm:flex-row gap-6 w-full">
+        <div id="card-container" class="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-6 w-full sm:w-[75%]">
             <div class="parent_div rounded-xl w-auto p-6 shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]  bg-white">
                 <div class="flex justify-between items-center">
                     <div class="w-[60px] h-[60px] rounded-2xl p-3 bg-[#FFE3E2]">
@@ -311,8 +313,7 @@
             </div>
 
         </div>
-        <div id="history-container"
-            class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] w-auto bg-white h-full rounded-xl p-4">
+        <div id="history-container" class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] w-auto bg-white h-full rounded-xl p-4">
             <div class="flex justify-center  items-center gap-34  h-fit w-auto ">
 
                 <div class="flex justify-center items-center text-xl font-semibold gap-2">
