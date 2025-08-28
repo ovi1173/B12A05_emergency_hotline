@@ -18,8 +18,8 @@ const getNumbers = document.getElementsByClassName('number');
 for (let i = 0; i < 9; i++) {
     calls[i].addEventListener('click', function () {
         if (coins >= 20) {
-            coins = coins - 20;      
-            coinsEl.innerText = coins; 
+            coins = coins - 20;
+            coinsEl.innerText = coins;
         }
         else {
             alert('You do not have sufficient coins you need at least 20 coins');
@@ -70,4 +70,19 @@ document.getElementById('clear-btn').addEventListener('click', function () {
 
 // copy button functionality
 const copyElements = document.getElementsByClassName('copy-btn');
-const copyCount = document.getElementById('')
+const copyCount = document.getElementById('copy-counter');
+let counter = 0;
+for (let i = 0; i < copyElements.length; i++) {
+    copyElements[i].addEventListener('click', function () {
+        counter++;
+        copyCount.innerText = counter;
+        const textToCopy = getNumbers[i].innerText
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                alert("The number is copied successfully:" + textToCopy);
+            })
+            .catch(err => {
+                console.error("Failed to copy text: ", err);
+            });
+    })
+}
