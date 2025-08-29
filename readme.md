@@ -1,8 +1,7 @@
 1.What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll?**
 
- **Answer:**
-
- **getElementById:**  It returns a single DOM element by an Id.
+ Answer:
+ getElementById: It returns a single DOM element by an Id.
 
  **getElementsByClassName:** It returns a group of DOM elements by a common class name.
 
@@ -23,10 +22,7 @@
   Event Bubbling is the process where elements propagate upward in a DOM by its parent element and continue doing that until it found root parent.
 
   i. first it triggered an event for example 'click'.
-
-  ii.the event first execute the target element,then it traverse
-   through its immediate parent then going up to the root.
-
+  ii.the event first execute the target element,then it traverse through its immediate parent then going up to the root.
   iii.Finally it reaches the document and execute further tasks.
   
   **4.What is Event Delegation in JavaScript? Why is it useful?**
@@ -38,9 +34,7 @@
    **Benefits:**
 
    i.increase code efficiency
-
    ii.it work dynamically
-
    iii.add only one eventlistener to handle all child.
 
 **5.What is the difference between preventDefault() and stopPropagation() methods?**
@@ -49,6 +43,6 @@
 
  **preventDefault():** it stops the default behavior of an element.for example, a button in a form reload each time but when use it the form do not work default mode.
 
- **stopPropagation():** it stops the event bubbling up.that means not able to propagate so do not reach the root.
+ stopPropagation(): it stops the event bubbling up.that means not able to propagate so do not reach the root.
 
  
